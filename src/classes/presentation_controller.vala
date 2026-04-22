@@ -1882,10 +1882,6 @@ namespace pdfpc {
          * Fill the presentation display with black
          */
         public void fade_to_black() {
-            if (this.single_screen_mode) {
-                return;
-            }
-
             this.faded_to_black = !this.faded_to_black;
             this.controllables_update();
         }
